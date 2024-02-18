@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  clickhouse-server:
+    extends:
+      file: docker-compose-clickhouse.yml
+      service: clickhouse-server
+
+volumes:
+  clickhouse_data:
